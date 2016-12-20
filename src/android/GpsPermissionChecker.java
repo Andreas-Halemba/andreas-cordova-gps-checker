@@ -1,4 +1,4 @@
-package com.hotelbird.gpsPermissionChecker.GpsPermissionChecker;
+package com.hotelbird.gpsPermissionChecker;
 
 import android.content.Context;
 import android.content.pm.PackageManager;

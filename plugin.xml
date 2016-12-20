@@ -2,17 +2,17 @@
 <plugin id="com.hotelbird.gpsPermissionChecker" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>GpsPermissionChecker</name>
     <js-module name="GpsPermissionChecker" src="www/GpsPermissionChecker.js">
-        <clobbers target="gpsPermissionChecker"/>
+        <clobbers target="window.gpsPermissionChecker"/>
     </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="GpsPermissionChecker">
-                <param name="android-package" value="com.hotelbird.gpsPermissionChecker.GpsPermissionChecker"/>
+                <param name="android-package" value="com.hotelbird.gpsPermissionChecker"/>
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
             <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
         </config-file>
-        <source-file src="src/android/GpsPermissionChecker.java" target-dir="src/com/hotelbird/gpsPermissionChecker/GpsPermissionChecker"/></platform>
+        <source-file src="src/android/GpsPermissionChecker.java" target-dir="src/com/hotelbird/gpsPermissionChecker"/></platform>
 </plugin>
