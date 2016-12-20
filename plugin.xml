@@ -7,7 +7,7 @@
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="GpsPermissionChecker">
-                <param name="android-package" value="com.hotelbird.gpsPermissionChecker"/>
+                <param name="android-package" value="com.hotelbird.gpsPermissionChecker.GpsPermissionChecker"/>
             </feature>
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml">
